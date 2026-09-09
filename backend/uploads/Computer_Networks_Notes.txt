@@ -1,0 +1,28 @@
+# Computer Networks Course Notes
+
+## Unit 1: Introduction and OSI Model
+A computer network is a system of interconnected devices that share resources and data.
+
+### The 7 Layers of the OSI Model
+1. Physical Layer: Transmits raw bit streams over physical media (cables, wireless).
+2. Data Link Layer: Node-to-node error detection and framing (MAC addresses, Ethernet, Switches).
+3. Network Layer: Host-to-host routing and IP addressing (IP addresses, Routers, ICMP).
+4. Transport Layer: End-to-end reliability and flow control (TCP, UDP, Port numbers).
+5. Session Layer: Establishes, manages, and terminates sessions between applications.
+6. Presentation Layer: Translation, encryption, and compression of data (SSL/TLS, ASCII, JPEG).
+7. Application Layer: User interface and application protocols (HTTP, FTP, DNS, SMTP).
+
+## Unit 2: Transport Protocols (TCP vs UDP)
+- Transmission Control Protocol (TCP): Connection-oriented, reliable protocol. Features 3-way handshake (SYN, SYN-ACK, ACK), flow control (sliding window), congestion control, and ordered packet delivery.
+- User Datagram Protocol (UDP): Connectionless, unreliable protocol. Low overhead, fast, no handshake, suitable for real-time streaming, DNS, and online gaming.
+
+## Unit 3: IP Addressing & Subnetting
+An IPv4 address is a 32-bit numerical label written in dotted-decimal format (e.g., 192.168.1.1).
+
+### Subnetting Fundamentals
+Subnetting divides a larger network into smaller, manageable sub-networks (subnets) using a Subnet Mask.
+- Subnet Mask determines which part of an IP address represents the Network ID and which part represents the Host ID.
+- CIDR (Classless Inter-Domain Routing): Expressed as IP/prefix (e.g., 192.168.1.0/24).
+- /24 Subnet: 255.255.255.0 mask, providing 256 total IP addresses (254 usable hosts, 1 Network address, 1 Broadcast address).
+- /26 Subnet: 255.255.255.192 mask, dividing a network into 4 subnets with 64 addresses (62 usable hosts each).
+- Host Calculation Formula: Usable hosts = (2^(32 - Prefix)) - 2.

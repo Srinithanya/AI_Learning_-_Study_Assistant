@@ -1,0 +1,22 @@
+# Data Structures & Algorithms Notes
+
+## Unit 1: Basic Data Structures & Time Complexity
+Data structures organize data for efficient access and modification.
+
+### Big-O Time Complexity
+- O(1): Constant time (Array lookup by index).
+- O(log N): Logarithmic time (Binary Search).
+- O(N): Linear time (Linear Search, Array traversal).
+- O(N log N): Linearithmic time (Merge Sort, Quick Sort average).
+- O(N^2): Quadratic time (Bubble Sort, Selection Sort).
+
+## Unit 2: Linear Data Structures
+- Arrays: Contiguous memory allocation, constant time indexing O(1), linear time insertion/deletion O(N).
+- Linked Lists: Dynamic size, nodes containing data and pointers. Insertion/deletion is O(1) at pointer location, but search is O(N).
+- Stacks: LIFO (Last In First Out) structure. Key operations: push(), pop(), peek(). Used in function call stacks, expression evaluation, and undo mechanisms.
+- Queues: FIFO (First In First Out) structure. Key operations: enqueue(), dequeue(). Used in task scheduling and breadth-first search (BFS).
+
+## Unit 3: Trees & Graphs
+- Binary Search Tree (BST): Tree where left child < root < right child. Search time is O(log N) for balanced trees, O(N) for degenerate trees.
+- AVL Tree / Red-Black Tree: Self-balancing binary search trees ensuring O(log N) operations.
+- Graphs: Set of vertices (nodes) and edges (connections). Represented via Adjacency Matrix or Adjacency List. Traversal algorithms: Depth-First Search (DFS using Stack) and Breadth-First Search (BFS using Queue).
